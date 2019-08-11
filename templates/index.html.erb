@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>MyApp</title>
+        <style type="text/css">
+            .centerDiv {
+                width: 600px;
+                text-align: center;
+                font-family: Avenir, Arial, Helvetica, sans-serif;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                white-space: pre-wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="centerDiv">
+            Public IP: <%= @publicip %>
+            Private IP: <%= @privateip %>
+
+            If life gives you lemons, make some kind of fruity juice. - Conan O'Brien
+        </div> 
+    </body>
+</html>

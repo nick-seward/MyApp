@@ -22,11 +22,13 @@ verifier:
 
 platforms:
   - name: ubuntu-18.04
-  - name: centos-7
 
 suites:
   - name: default
     verifier:
       inspec_tests:
         - test/integration/default
-    attributes:
+    attributes: { foo: "bar" }
+    run_list:
+      - recipe[MyApp::default]
+
