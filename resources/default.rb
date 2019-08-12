@@ -17,4 +17,8 @@ action :install do
         mode '0644'
         action :create
     end
+
+    service 'nginx' do
+        action :restart
+    end
 end
