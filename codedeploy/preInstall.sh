@@ -1,4 +1,5 @@
 #!/bin/bash
 
 cd /home/ec2-user;
-mkdir cookbooks;
+rm -rf ./cookbooks
+mkdir -p cookbooks/MyApp;

@@ -2,12 +2,12 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/cookbooks
+    destination: /home/ec2-user/cookbooks/MyApp
 hooks:
   BeforeInstall:
     - location: codedeploy/preInstall.sh
       timeout: 30
-      runas: ec2-user
+      runas: root
   AfterInstall:
     - location: codedeploy/runChef.sh
       timeout: 300
