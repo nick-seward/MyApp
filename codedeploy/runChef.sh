@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /home/ec2user;
+cd /home/ec2-user;
 chef-client -z -o MyApp

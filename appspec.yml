@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2user/cookbooks
+    destination: /home/ec2-user/cookbooks
 hooks:
   BeforeInstall:
     - location: codedeploy/preInstall.sh
