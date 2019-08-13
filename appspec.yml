@@ -7,7 +7,7 @@ hooks:
   BeforeInstall:
     - location: codedeploy/preInstall.sh
       timeout: 30
-      runas: ec2user
+      runas: ec2-user
   AfterInstall:
     - location: codedeploy/runChef.sh
       timeout: 300
