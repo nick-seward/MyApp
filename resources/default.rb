@@ -6,7 +6,7 @@ action :install do
 
     # Get the ip addresses from AWS
 
-    template '/var/www/html/index.html' do
+    template '/usr/share/nginx/html/index.html' do
         source 'index.html.erb'
         variables(
             publicip: public_ip,
